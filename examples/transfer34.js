@@ -1,7 +1,7 @@
 // import {Apis} from "bitsharesjs-ws";
-// import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
+import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
-console.log("... test instance34 88 11");
+console.log("... test instance34 88 11000000000000000000");
 
 var witness_node = "wss://dev.epx.everypixel.com/bitstor_ws"
 console.log("witness_node", witness_node);
