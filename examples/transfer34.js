@@ -65,7 +65,7 @@ Apis.instance(witness_node, true).init_promise.then(res => {
                 let tr = new TransactionBuilder()
 
                 tr.add_type_operation( "transfer", {
-                    //delegated_balance_id: null,
+                    delegated_balance_id: undefined,
                     fee: {
                         amount: 0,
                         asset_id: feeAsset.get("id")
