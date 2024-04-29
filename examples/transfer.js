@@ -1,16 +1,18 @@
 import {Apis} from "bitsharesjs-ws";
 import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
-var witness_node = "wss://node.testnet.bitshares.eu"
+var witness_node = "wss://dev.epx.everypixel.com/bitstor_ws"
 var nobroadcast = false
 var amount_to_send = 10000
-var asset_to_send = "TEST"
-var from_account = "bob"
-var to_account = "alice"
+var asset_to_send = "BSC"
+var from_account = "nathan"
+var to_account = "oliver23"
 var memo_text = "Your memo goes in here.."
 
-let pKeyActive = PrivateKey.fromWif("5KBuq5WmHvgePmB7w3onYsqLM8ESomM2Ae7SigYuuwg8MDHW7NN");  // Replace with your own Active Private Key
-let pKeyMemo = PrivateKey.fromWif("5KBuq5WmHvgePmB7w3onYsqLM8ESomM2Ae7SigYuuwg8MDHW7NN");  // Replace with your own Memo Private Key
+let pKeyActive = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv57iANtx");  // Replace with your own Active Private Key
+let pKeyMemo = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv57iANtx");  // Replace with your own Memo Private Key
+
+console.log("... test instance");
 
 Apis.instance(witness_node, true).init_promise.then(res => {
    console.log("connected to:", res[0].network);
@@ -59,6 +61,7 @@ Apis.instance(witness_node, true).init_promise.then(res => {
                 let tr = new TransactionBuilder()
 
                 tr.add_type_operation( "transfer", {
+                    delegated_balance_id: null,
                     fee: {
                         amount: 0,
                         asset_id: feeAsset.get("id")
