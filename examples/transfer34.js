@@ -1,5 +1,5 @@
-import {Apis} from "bitsharesjs-ws";
-import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
+// import {Apis} from "bitsharesjs-ws";
+// import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
 console.log("... test instance34 88 11");
 
@@ -13,8 +13,8 @@ var from_account = "nathan"
 var to_account = "oliver23"
 var memo_text = "Your memo goes in here.."
 
-let pKeyActive = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv57iANtx");  // Replace with your own Active Private Key
-let pKeyMemo = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv57iANtx");  // Replace with your own Memo Private Key
+// let pKeyActive = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv57iANtx");  // Replace with your own Active Private Key
+// let pKeyMemo = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv57iANtx");  // Replace with your own Memo Private Key
 
 console.log("... test instance34 88 00");
 
