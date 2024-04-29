@@ -1,8 +1,12 @@
 import {Apis} from "bitsharesjs-ws";
 import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
+console.log("... test instance34 88 11");
+
 var witness_node = "wss://dev.epx.everypixel.com/bitstor_ws"
+console.log("witness_node", witness_node);
 var nobroadcast = false
+console.log("nobroadcast", nobroadcast);
 var amount_to_send = 10000
 var asset_to_send = "BSC"
 var from_account = "nathan"
@@ -14,8 +18,8 @@ let pKeyMemo = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv5
 
 console.log("... test instance34 88 00");
 
-Apis.instance(witness_node, true).init_promise.then(res => {
-   console.log("connected to:", res[0].network);
+// Apis.instance(witness_node, true).init_promise.then(res => {
+//    console.log("connected to:", res[0].network);
 
     // ChainStore.init(nobroadcast).then(() => {
 
@@ -79,4 +83,4 @@ Apis.instance(witness_node, true).init_promise.then(res => {
     //             })
     //         });
     // });
-});
+// });
