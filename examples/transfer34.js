@@ -19,7 +19,7 @@ let pKeyMemo = PrivateKey.fromWif("5KGQRZ2jUv6SpMkFuhm8nxrGfRF9GFZMAjMzJrpoArJv5
 console.log("... test instance34 88 00 Apis.instance");
 
 Apis.instance(witness_node, true).init_promise.then(res => {
-   console.log("connected to:", res[0].network);
+   console.log("connected to:", res);
 
     ChainStore.init(nobroadcast).then(() => {
 
