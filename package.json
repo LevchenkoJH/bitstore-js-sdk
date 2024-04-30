@@ -20,7 +20,7 @@
         "build-es": "cross-env BABEL_ENV=es babel lib -d es",
         "postbuild": "yarn run browserify && yarn run build-es && yarn run webpack",
         "build:watch": "babel lib -d dist --watch",
-        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone bitshares_js -o build/bitsharesjs.js -d",
+        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone bitstore_js -o build/bitsharesjs.js -d",
         "postbrowserify": "cross-env NODE_ENV=production minify build/bitsharesjs.js --mangle --outFile build/bitsharesjs.min.js",
         "precommit": "pretty-quick --staged && yarn run test",
         "doc": "esdoc -c esdoc.json",
@@ -51,7 +51,22 @@
     "bugs": {
         "url": "https://github.com/bitshares/bitsharesjs/issues"
     },
-    "files": ["examples/*", "lib/*", "dist/*", "es/*", "test/*", "tools/*", "docs/*", ".babelrc", ".eslintrc", ".prettierignore", ".prettierrc", "esdoc.json", "webpack.config.js", "yarn.lock"],
+    "files": [
+        "examples/*",
+        "lib/*",
+        "dist/*",
+        "es/*",
+        "test/*",
+        "tools/*",
+        "docs/*",
+        ".babelrc",
+        ".eslintrc",
+        ".prettierignore",
+        ".prettierrc",
+        "esdoc.json",
+        "webpack.config.js",
+        "yarn.lock"
+    ],
     "engines": {
         "node": ">= 16.13.0"
     },
@@ -59,7 +74,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "^1.4.2",
-        "bitstore-ws": "github:LevchenkoJH/bitstore-ws#develop",
+        "bitstore-ws": "git+https://github.com/LevchenkoJH/bitstore-ws.git#develop",
         "bs58": "^4.0.1",
         "bytebuffer": "^5.0.1",
         "create-hash": "^1.2.0",
