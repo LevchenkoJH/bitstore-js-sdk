@@ -6,8 +6,8 @@ import {
     ops,
     types
 } from "../../lib";
-// import { Apis } from 'bitsharesjs-ws';
-import {Apis, ChainConfig} from "bitsharesjs-ws";
+// import { Apis } from 'bitstore-ws';
+import {Apis, ChainConfig} from "bitstore-ws";
 import assert from "assert";
 
 describe("issue13", function() {

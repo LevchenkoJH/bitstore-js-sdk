@@ -59,7 +59,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "^1.4.2",
-        "bitsharesjs-ws": "^6.0.2",
+        "bitstore-ws": "github:LevchenkoJH/bitstore-ws#develop",
         "bs58": "^4.0.1",
         "bytebuffer": "^5.0.1",
         "create-hash": "^1.2.0",

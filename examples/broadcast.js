@@ -1,4 +1,4 @@
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "bitstore-ws";
 import {TransactionBuilder, PrivateKey} from "../lib";
 import {asset} from "../lib/serializer/src/operations";
 
