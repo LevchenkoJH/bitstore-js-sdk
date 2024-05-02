@@ -7,7 +7,7 @@ import th from "./test_helper";
 
 import {is} from "immutable";
 import {PublicKey, PrivateKey, types} from "../../lib";
-import {ChainConfig} from "bitstore-ws";
+import {ChainConfig} from "bitstore-js-ws";
 
 describe("types", function() {
     it("vote_id", function() {

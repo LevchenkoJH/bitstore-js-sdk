@@ -1,5 +1,5 @@
 import assert from "assert";
-import {Apis} from "bitstore-ws";
+import {Apis} from "bitstore-js-ws";
 import {TransactionBuilder, ops, hash} from "../../lib";
 
 describe("TransactionBuilder", () => {

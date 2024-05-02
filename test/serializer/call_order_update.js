@@ -1,5 +1,5 @@
 import {ops} from "../../lib/";
-import {Apis} from "bitstore-ws";
+import {Apis} from "bitstore-js-ws";
 
 import assert from "assert";
 var trans1 = {

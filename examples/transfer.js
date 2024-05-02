@@ -1,4 +1,4 @@
-import {Apis} from "bitstore-ws";
+import {Apis} from "bitstore-js-ws";
 import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
 var witness_node = "wss://dev.epx.everypixel.com/bitstor_ws"

@@ -1,4 +1,4 @@
-import {Apis} from "bitstore-ws";
+import {Apis} from "bitstore-js-ws";
 import {TransactionBuilder, ChainStore, FetchChain, PrivateKey} from "../lib";
 
 const wifKey = "5JjjMBUHUecV8nHvgKXdjRi9oqD8h382qQrAEAdLQ4oYAoEeSv2";

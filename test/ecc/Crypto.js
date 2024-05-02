@@ -1,7 +1,7 @@
 import {Aes, PrivateKey, PublicKey, Signature, hash, key} from "../../lib";
 import assert from "assert";
 import {Long} from "bytebuffer";
-import {ChainConfig} from "bitstore-ws";
+import {ChainConfig} from "bitstore-js-ws";
 
 import secureRandom from "secure-random";
 

@@ -1,4 +1,4 @@
-import {Apis} from "bitstore-ws";
+import {Apis} from "bitstore-js-ws";
 import {ChainStore} from "../lib";
 
 Apis.instance("wss://eu.nodes.bitshares.ws", true).init_promise.then(res => {

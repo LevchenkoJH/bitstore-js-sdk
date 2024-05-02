@@ -1,4 +1,4 @@
-import {Apis} from "bitstore-ws";
+import {Apis} from "bitstore-js-ws";
 import {
     TransactionBuilder,
     ChainStore,

@@ -1,7 +1,7 @@
 {
-    "name": "bitstore-js",
+    "name": "bitstore-js-sdk",
     "version": "1.0.0",
-    "description": "Pure JavaScript BitShares library for node.js and browsers.",
+    "description": "Pure JavaScript Bitstore library for node.js and browsers.",
     "browser": {
         "ws": false,
         "crypto": false
@@ -20,8 +20,8 @@
         "build-es": "cross-env BABEL_ENV=es babel lib -d es",
         "postbuild": "yarn run browserify && yarn run build-es && yarn run webpack",
         "build:watch": "babel lib -d dist --watch",
-        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone bitstore_js -o build/bitsharesjs.js -d",
-        "postbrowserify": "cross-env NODE_ENV=production minify build/bitsharesjs.js --mangle --outFile build/bitsharesjs.min.js",
+        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone bitstore_js_sdk -o build/bitstore-js-sdk.js -d",
+        "postbrowserify": "cross-env NODE_ENV=production minify build/bitstore-js-sdk.js --mangle --outFile build/bitstore-js-sdk.min.js",
         "precommit": "pretty-quick --staged && yarn run test",
         "doc": "esdoc -c esdoc.json",
         "example:asset": "babel-node examples/updateAsset",
@@ -38,18 +38,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bitshares/bitsharesjs.git"
+        "url": "git+https://github.com/LevchenkoJH/bitstore-js-sdk.git"
     },
-    "author": "BitShares UI Team <ui-dev@bitshares.org>",
+    "author": "",
     "contributors": [
-        "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
-        "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)",
-        "Daniel Larimer <dan@cryptonomex.com> (https://github.com/bytemaster/)",
-        "Valentine Zavgorodnev <valentine.zavgorodnev@gmail.com> (https://github.com/valzav/)"
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/bitshares/bitsharesjs/issues"
+        "url": "https://github.com/LevchenkoJH/bitstore-js-sdk/issues"
     },
     "files": [
         "examples/*",
@@ -74,7 +70,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "^1.4.2",
-        "bitstore-ws": "git+https://github.com/LevchenkoJH/bitstore-ws.git#develop",
+        "bitstore-js-ws": "git+https://github.com/LevchenkoJH/bitstore-js-ws.git#develop",
         "bs58": "^4.0.1",
         "bytebuffer": "^5.0.1",
         "create-hash": "^1.2.0",

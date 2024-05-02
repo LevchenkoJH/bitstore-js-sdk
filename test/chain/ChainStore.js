@@ -1,5 +1,5 @@
 import assert, { doesNotMatch } from "assert";
-import {Apis, ChainConfig} from "bitstore-ws";
+import {Apis, ChainConfig} from "bitstore-js-ws";
 import {ChainStore} from "../../lib";
 // var objs = require("./testObjects.json");
 
