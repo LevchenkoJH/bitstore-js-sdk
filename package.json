@@ -55,6 +55,7 @@
         "test/*",
         "tools/*",
         "docs/*",
+        "patches/*",
         ".babelrc",
         ".eslintrc",
         ".prettierignore",
