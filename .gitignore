@@ -5,3 +5,4 @@ node_modules
 dist
 es
 package-lock.json
+yarn-error.log
