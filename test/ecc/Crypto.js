@@ -73,6 +73,7 @@ describe("ECC", function() {
             var ciphertext = Aes.encrypt_with_checksum(
                 sender,
                 receiver.toPublicKey(),
+                null,
                 nonce,
                 Buffer.from("\xff\x00", "binary")
             );
@@ -80,6 +81,7 @@ describe("ECC", function() {
             var plaintext = Aes.decrypt_with_checksum(
                 receiver,
                 sender.toPublicKey(),
+                null,
                 nonce,
                 ciphertext
             );
